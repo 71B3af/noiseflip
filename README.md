@@ -1,6 +1,6 @@
 # Noiseflip
 
-Reads the skater's **physics state**, the **board's motion** and your **gamepad** from skate. (run through the original, unmodified ReSkate) and turns 13 things into 13 MIDI notes plus 6 MIDI controllers. Nothing is injected and nothing is written to the game: memory is only read from outside.
+Reads the skater's **physics state**, the **board's rotation** and your **gamepad inputs** from skate. (run through the original, unmodified ReSkate) and turns 13 things into 13 MIDI notes plus 6 MIDI controllers. Nothing is injected and nothing is written to the game: memory is only read from outside.
 
 Tested in the real game (Steam build 25414733) and by ~1.4 million automated checks (`tests.cpp`, mostly random-session fuzzing). `fake_skate.exe` plays a scripted session for testing without the game.
 
