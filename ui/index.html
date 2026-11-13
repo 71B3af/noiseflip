@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOISEFLIP</title>
+<link rel="icon" type="image/png" sizes="256x256" href="icon.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lost">NO ANSWER FROM NOISEFLIP. IS THE PROGRAM RUNNING?</div>
+<div class="app">
+  <header>
+    <div class="hl">
+      <img class="logo" src="logo.png" alt="NOISEFLIP">
+      <span class="chip-s" id="c-game"><i></i><b>GAME</b></span>
+      <span class="chip-s" id="c-midi"><i></i><b>MIDI</b></span>
+      <span class="chip-s" id="c-pad"><i></i><b>PAD</b></span>
+      <span class="chip-s click" id="c-preset" title="Open the presets"><i></i><b>PRESET</b></span>
+    </div>
+  </header>
+  <nav class="tabs">
+    <div class="tabrow">
+      <button data-tab="global"><em>01</em>GLOBAL</button>
+      <button data-tab="triggers"><em>02</em>TRIGGERS</button>
+      <button data-tab="cc"><em>03</em>CC</button>
+      <button data-tab="mapping"><em>04</em>MAPPING</button>
+      <button data-tab="live"><em>05</em>LIVE</button>
+      <button data-tab="presets"><em>06</em>PRESETS</button>
+    </div>
+    <div id="save" title="Every change is saved at once to noiseflip.ini">AUTOSAVE</div>
+  </nav>
+  <main id="main"></main>
+  <footer>
+    <span>NOISEFLIP // every change is saved at once to noiseflip.ini</span>
+    <span class="scalebox">SCALE <span id="scale" class="seg"></span></span>
+    <button id="quit" class="btn ghost">QUIT NOISEFLIP</button>
+  </footer>
+</div>
+<div id="toast" role="status"></div>
+<datalist id="ports"></datalist>
+<script src="app.js"></script>
+</body>
+</html>
