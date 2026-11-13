@@ -1,0 +1,16 @@
+# build output
+*.exe
+*.o
+*.res
+*.obj
+*.pdb
+tests
+# per-user files created while running
+noiseflip.ini
+noiseflip.window
+presets/
+*.csv
+# release staging
+release/
+*.zip
+preview_*.png
